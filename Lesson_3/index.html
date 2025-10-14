@@ -1,0 +1,49 @@
+<!-- Most elements will have an opening tag and a closing tag.-->
+<p>I love coding!</p>
+
+<!-- Some elements are self-closing and do not have a closing tag.These are known as void elements.-->
+
+<!--If you wanted to display an image, you will need to include a couple of attributes inside your image element. 
+An attribute is a special value used to adjust the behavior for an HTML element.
+The src attribute is used to specify the location for that image. 
+For image elements, it's good practice to include another attribute called the alt attribute. 
+The alt attribute is used to provide short, descriptive text for the images.-->
+<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Two tabby kittens sleeping together on a couch."/>
+
+<!--HTML is for the content and structure. CSS is for styling. JavaScript is for adding interactivity to your web pages.-->
+
+<!--An attribute is a value placed inside the opening tag of an HTML element. 
+Attributes provide additional information about the element or specify how the element should behave.
+The attribute name is followed by an equal sign (=) and a value in quotes. 
+The value can be a string or a number, depending on the attribute.
+This first example uses the href and target attributes. 
+The href attribute specifies the URL of a link and the target attribute specifies where to open the link.
+Without the href attribute, the link would not work because there would be no destination URL. 
+So you must include this href attribute to make the link functional. 
+The target="__blank" enables the link to open in a new browser tab.-->
+<br>
+<a href="https://www.freecodecamp.org" target="_blank">This link opens in a new tab or window</a>
+<br>
+
+<!--Similar to the href attribute, the src attribute is required because it specifies the image file to be displayed. 
+The alt attribute is not required, but it is recommended for accessibility purposes. 
+Accessibility means making sure that everyone, including those with disabilities, 
+can use and understand things like websites, apps, and physical spaces. -->
+<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" alt="Two cats running in the dirt." />
+
+<!--Some attributes are a little unique with their syntax like the checked attribute.
+Here we have an input element with the type attribute set to checkbox. 
+Inputs are used to collect data from users, and the type attribute specifies the type of input. 
+In this case, this input is a checkbox.-->
+<br>
+<input type="checkbox" checked />
+<!--Remove the checked attribute from the input in the interactive editor, 
+and you will see that the checkbox is no longer checked by default.-->
+<input type="checkbox"/>
+
+<!--There are several common BOOLEAN attributes you will encounter in HTML, such as disabled, readonly, and required. 
+Here is an example of a text input element that is disabled by default.-->
+<br>
+<input type="text" disabled>
+<!--Remove the disabled attribute from the input in the interactive editor, and you will see that the input is no longer disabled.-->
+<input type="text">
