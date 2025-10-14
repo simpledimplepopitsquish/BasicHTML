@@ -1,0 +1,1 @@
+# This repository contains exercises and examples from the "Basic HTML" chapter of freeCodeCamp.
