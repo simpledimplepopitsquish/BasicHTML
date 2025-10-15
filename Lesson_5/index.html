@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Examples of the link element</title>
+        <link rel="stylesheet" href="./styles.css" /> <!--The link element is used to link to external resources like stylesheets and site icons. 
+        The link element should be placed inside the head element-->
+        <!--The rel attribute specifies the relationship between the current document and the linked resource.-->
+        <!--The href attribute specifies the URL of the linked resource.-->
+        <!--The dot followed by a forward slash in the example tells the computer to look in the current folder, 
+        or directory, for the styles.css file. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+            rel="stylesheet"
+        /> <!--Google Fonts are a set of free and open source custom fonts that you can use inside any project.
+        You can choose which fonts you would like to use and Google will provide you with the necessary HTML and CSS code.
+        In this example, the preconnect value for the rel attribute tells the browser to create an early connection to 
+        the value specified in the href attribute. This is done to speed up loading times for these external resources.-->
+        <link rel="icon" type="image/x-icon" href="./favicon.ico" /> <!--Another common use case for the link element is to link to icons. A favicon, which is short for favorite icon, 
+        is a small icon typically displayed in the browser tab next the site title. 
+        A lot of websites will use a favicon to display their brand icon.-->
+    </head>
+</html>
+
+<!--What is the HTML boilerplate, you ask? It's like a ready-made template for your webpages.
+A boilerplate includes the basic structure and essential elements every HTML document needs. 
+It saves you time and helps ensure your pages are set up properly. Here is an example:
+
+<!DOCTYPE html> First, there is the DOCTYPE declaration. It tells browsers which version of HTML you're using.
+
+<html lang="en"> Next, comes the html tag. This wraps around all your content, 
+and can specify the language of your page.
+
+Inside the html tag, you'll find two main sections - a head, and a body:
+
+  <head>
+    The head section contains important behind-the-scenes information.
+
+    Your site's metadata, contained in meta elements, has details about things like character encoding, 
+    and how websites like Twitter should preview your page's link. 
+
+    <meta charset="utf-8" /> UTF-8, or UCS Transformation Format 8, is a standardized character encoding 
+    widely used on the web. Character encoding is the method computers use to store characters as data.
+    Essentially, all text on a web page is a sequence of characters stored as one or more bytes. 
+    In computing, a byte is a unit of data consisting of 8 bits, or binary digits. 
+    UTF-8 supports every character in the Unicode character set - and this includes characters and symbols 
+    from all writing systems, languages, and technical symbols.
+    For each new project you create, you should include this meta element with the charset attribute set to UTF-8!
+
+    <meta
+       name="viewport"
+       content="width=device-width, initial-scale=1.0" 
+    />
+
+    <title>freeCodeCamp</title> Your site's title, found in the title element, 
+    determines the text that appears in the browser tab or window.
+
+    <link rel="stylesheet" href="./styles.css" /> Finally, you'll typically link your page's external stylesheets 
+    in the head section using link elements.
+
+  </head>
+
+  <body>
+    Headings, paragraphs, images, etc. go inside here
+    <h1>I am a main title</h1>
+    <p>Example paragraph text</p>
+  </body>
+
+</html>
+-->
