@@ -1,0 +1,20 @@
+#title {
+    color: red;
+}
+/* The # symbol is used to reference an id name in CSS.
+The hash symbol (#) in front of title, tells the computer you want to target an id with that value. 
+id names should not be used more than once, and they should always be unique. */
+.box {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+/* In contrast to the id attribute, the class attribute value does not need to be unique and can contain spaces.
+Classes are used to group elements together that share the same styles.*/
+.red-box {
+  background-color: red;
+}
+
+.blue-box {
+  background-color: blue;
+}
