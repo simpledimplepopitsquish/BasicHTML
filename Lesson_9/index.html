@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 9</title>
+</head>
+<body>
+    <!-- The audio and video elements allow you to add sound and video content to your HTML documents. 
+     The audio element supports popular audio formats like mp3, wav, and ogg. 
+     The video element supports mp4, ogg, and webm formats. To include audio content on your web page, 
+     you can use the audio element with the src attribute pointing to the location of your audio file.-->
+    <audio src="https://lambda.vgmtreasurechest.com/soundtracks/hatsune-miku-project-diva-mega39-s-10th-anniversary-collection/lymngody/1-06.%20Melt.mp3" 
+    controls
+    loop 
+    ></audio>
+    <!-- The controls attribute adds playback controls like play, pause, and volume to the audio player. 
+    There are several other attributes that enhance the functionality of the audio element.
+    The loop attribute is a boolean attribute that makes the audio replay continuously.
+    Another attribute you can use is the muted attribute. 
+    When present in the audio element, this boolean attribute will start the audio in a muted state-->
+    <br>
+    <audio controls> 
+        <source src="https://lambda.vgmtreasurechest.com/soundtracks/hatsune-miku-project-diva-mega39-s-10th-anniversary-collection/kjqzzbhj/2-01.%20PoPiPo.mp3" type="audio/mpeg" />
+        <source src="audio.wav" type="audio/wav" />
+        <source src="audio.mp3" type="audio/ogg" />
+        Your browser does not support the audio element.
+    </audio><!-- The source element allows you to specify multiple audio files in different formats. 
+    This is useful for ensuring compatibility across different browsers, as not all browsers support 
+    the same audio formats.
+    The type attribute specifies the MIME type of the audio file, which helps the browser determine 
+    if it can play the file.
+    If the browser does not support the audio element, the text between the opening and closing audio 
+    tags will be displayed as a fallback message.-->
+    <br>
+    <!--All the attributes we have learned so far are also supported in the video element. 
+    Here's an example of using a video element with the loop, controls, and muted attributes.-->
+    <video
+        src="https://ia902302.us.archive.org/17/items/BiliBili-BV1Bx411q7Mn_p89-1M6B1VB/BV1Bx411q7Mn_p89.mp4"
+        loop
+        controls
+        muted
+        poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+        width="400"
+    ></video>
+    <!-- The width attribute specifies the width of the video player in pixels.
+    The height attribute can also be used to set the height of the video player.
+    The poster attribute specifies an image to be shown while the video is downloading,
+    or until the user hits the play button.-->
+</body>
+</html>
