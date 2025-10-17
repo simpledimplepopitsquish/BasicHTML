@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 12</title>
+</head>
+<body>
+    <!--A replaced element is an element whose content is determined by an external resource rather 
+    than by CSS itself. CSS, or cascading stylesheets, is used to add styles to a web page. 
+    Common examples of replaced elements include the image, iframe, and video elements.
+    With replaced elements, you can control the position, or layout of an element. 
+    But your CSS cannot directly modify the content of that element. -->
+
+    <!--A more robust example might be the iframe element, which embeds an external site on your web page.-->
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/NocXEwsJGOQ?si=l30l4fY1N2mTW_j5" 
+        title="Anamanaguchi - Miku ft. Hatsune Miku (Lyric Video)" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen
+    ></iframe>
+    <!--This element stands for inline frame. It's an inline element used to embed other HTML 
+    content directly within the HTML page. That HTML content could be a video, map, another HTML element, 
+    or even other web pages.
+    The src attribute specifies the URL of the page you want to embed
+    The width attribute specifies the width of the iframe. 
+    The height attribute specifies the height of the iframe.
+    The allowfullscreen attribute allows the user to display the iframe in full screen mode.
+    It's also a good practice to specify a title attribute for the iframe, as it's important for accessibility.
+    
+    Note that the video can come from anywhere. 
+    It doesn't have to come from video services like YouTube and Vimeo.
+    -->
+
+    <!--Other common examples of using the iframe element would be to embed maps onto the page. -->
+    <iframe 
+        width="425" 
+        height="350" 
+        src="https://www.openstreetmap.org/export/embed.html?bbox=139.68991756439212%2C35.65021742602287%2C139.71000194549563%2C35.68717381744844&amp;layer=mapnik" 
+        style="border: 1px solid black"
+    ></iframe>
+    <br/>
+    <!--The element itself is replaced with the external object: the site. 
+    Your CSS can change the positioning of the embedded site, but you cannot modify the site's contents.-->
+    
+
+    <!--To dive a bit further, if the embedded site has an h1 element, your CSS would not be able to style that h1 element. 
+    You cannot change the size, font color, and so on.-->
+   
+    <!--There are some other replaced elements, such as video, and embed. 
+    And some elements behave as replaced elements under specific circumstances.
+    Here's an example of an input element with the type attribute set to image
+
+    <input type="image" alt="Descriptive text goes here" src="example-img-url">
+
+    This type of input is considered to be a replaced element, 
+    but other input types like text, or email are not replaced elements.
+    -->
+
+    <!--If you want to embed direct HTML within the iframe element 
+    you have to use the srcdoc attribute instead of src-->
+    <iframe 
+        width="300" 
+        height="200" 
+        srcdoc="<!DOCTYPE html><html><body><h1>Hello World!</h1></body></html>"
+    ></iframe>
+</body>    
+</html>
