@@ -1,0 +1,7 @@
+#hover:hover {
+    color: black;
+}
+
+#focus:focus {
+    color: green;
+}
